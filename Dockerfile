@@ -1,6 +1,6 @@
 FROM python:3.9.16-slim-bullseye
 
-WORKDIR /
+#WORKDIR /
 #COPY . . 
 RUN python3 env/Scripts/activate_this.py
 RUN ./activate
