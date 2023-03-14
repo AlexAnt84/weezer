@@ -1,7 +1,7 @@
 FROM python:3.9.16-slim-bullseye
 
 COPY . . 
-RUN cd /env/Scripts/
+RUN cd env/Scripts/
 RUN python3 activate_this.py
 RUN ./activate
 RUN pip install --upgrade pip && pip install -r requirements.txt
