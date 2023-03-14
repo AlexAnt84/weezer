@@ -2,10 +2,7 @@ FROM python:3.9.16-slim-bullseye
 
 COPY Weezer Weezer
 WORKDIR Weezer 
-RUN ls
-RUN cd env/Scripts/
-RUN python3 activate_this.py
-RUN ./activate
+RUN env/Scripts//activate
 RUN pip install --upgrade pip && pip install -r requirements.txt
 EXPOSE 5000/tcp
 ENV PATH=/home/ubuntu/.virtualenvs/bin:$PATH
