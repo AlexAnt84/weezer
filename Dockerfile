@@ -1,6 +1,7 @@
 FROM python:3.9.16-slim-bullseye
 
 COPY . . 
+RUN ls
 RUN cd env/Scripts/
 RUN python3 activate_this.py
 RUN ./activate
